@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en" data-default-color-scheme=auto>
+<html lang="zh-CN" data-default-color-scheme=auto>
 
 
 
@@ -19,15 +19,15 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="���������Ż���һ��Promt����ʾ���ϵ��Ż���һ�������Ż��ڵ��ڲ�����ʾ����Ai�ڵ㶼����Promt�ռ䣬��ͬ���������и���ȷ��Promt����optimize�ڵ㣺 1234567891011121314151617181920212223242526272829303132333435363738394041        i">
+    <meta name="description" content="案例三的优化：一：Promt，提示词上的优化第一个方向：优化节点内部的提示词在Ai节点都会有Promt空间，不同场景可以有更精确的Promt比如optimize节点： 1234567891011121314151617181920212223242526272829303132333435363738394041        if not user_feedback:        # 优化点1">
 <meta property="og:type" content="article">
 <meta property="og:title" content="easy-langent_chapter6_note">
 <meta property="og:url" content="http://example.com/2026/04/25/easy-langent_chapter6_note/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="���������Ż���һ��Promt����ʾ���ϵ��Ż���һ�������Ż��ڵ��ڲ�����ʾ����Ai�ڵ㶼����Promt�ռ䣬��ͬ���������и���ȷ��Promt����optimize�ڵ㣺 1234567891011121314151617181920212223242526272829303132333435363738394041        i">
-<meta property="og:locale" content="en_US">
+<meta property="og:description" content="案例三的优化：一：Promt，提示词上的优化第一个方向：优化节点内部的提示词在Ai节点都会有Promt空间，不同场景可以有更精确的Promt比如optimize节点： 1234567891011121314151617181920212223242526272829303132333435363738394041        if not user_feedback:        # 优化点1">
+<meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-04-25T10:00:00.000Z">
-<meta property="article:modified_time" content="2026-04-24T17:57:54.017Z">
+<meta property="article:modified_time" content="2026-04-25T09:39:17.454Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="Python">
 <meta property="article:tag" content="easy-langent">
@@ -119,7 +119,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/" target="_self">
                 <i class="iconfont icon-home-fill"></i>
-                <span>Home</span>
+                <span>首页</span>
               </a>
             </li>
           
@@ -131,7 +131,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/archives/" target="_self">
                 <i class="iconfont icon-archive-fill"></i>
-                <span>Archives</span>
+                <span>归档</span>
               </a>
             </li>
           
@@ -143,7 +143,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/categories/" target="_self">
                 <i class="iconfont icon-category-fill"></i>
-                <span>Categories</span>
+                <span>分类</span>
               </a>
             </li>
           
@@ -155,7 +155,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/tags/" target="_self">
                 <i class="iconfont icon-tags-fill"></i>
-                <span>Tags</span>
+                <span>标签</span>
               </a>
             </li>
           
@@ -167,7 +167,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/about/" target="_self">
                 <i class="iconfont icon-user-fill"></i>
-                <span>About</span>
+                <span>关于</span>
               </a>
             </li>
           
@@ -206,7 +206,7 @@
               <a href="/" target="_self">
                 <div class="mobile-grid-item">
                   <i class="iconfont icon-home-fill"></i>
-                  <span>Home</span>
+                  <span>首页</span>
                 </div>
               </a>
             </div>
@@ -220,7 +220,7 @@
               <a href="/archives/" target="_self">
                 <div class="mobile-grid-item">
                   <i class="iconfont icon-archive-fill"></i>
-                  <span>Archives</span>
+                  <span>归档</span>
                 </div>
               </a>
             </div>
@@ -234,7 +234,7 @@
               <a href="/categories/" target="_self">
                 <div class="mobile-grid-item">
                   <i class="iconfont icon-category-fill"></i>
-                  <span>Categories</span>
+                  <span>分类</span>
                 </div>
               </a>
             </div>
@@ -248,7 +248,7 @@
               <a href="/tags/" target="_self">
                 <div class="mobile-grid-item">
                   <i class="iconfont icon-tags-fill"></i>
-                  <span>Tags</span>
+                  <span>标签</span>
                 </div>
               </a>
             </div>
@@ -262,7 +262,7 @@
               <a href="/about/" target="_self">
                 <div class="mobile-grid-item">
                   <i class="iconfont icon-user-fill"></i>
-                  <span>About</span>
+                  <span>关于</span>
                 </div>
               </a>
             </div>
@@ -273,19 +273,19 @@
             <a href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
               <div class="mobile-grid-item">
                 <i class="iconfont icon-search"></i>
-                <span>Search</span>
+                <span>搜索</span>
               </div>
             </a>
           </div>
         
         
           <div class="col-4 mobile-grid-cell" id="mobile-color-toggle-btn"
-               data-label-light="Light"
-               data-label-dark="Dark">
+               data-label-light="开灯"
+               data-label-dark="关灯">
             <a href="javascript:;" aria-label="Color Toggle">
               <div class="mobile-grid-item">
                 <i class="iconfont icon-dark" id="mobile-color-toggle-icon"></i>
-                <span id="mobile-color-toggle-label">Dark</span>
+                <span id="mobile-color-toggle-label">关灯</span>
               </div>
             </a>
           </div>
@@ -316,7 +316,7 @@
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
         <time datetime="2026-04-25 18:00" pubdate>
-          April 25, 2026 pm
+          2026年4月25日 晚上
         </time>
       </span>
     
@@ -327,7 +327,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          3.5k words
+          3k 字
         
       </span>
     
@@ -338,7 +338,7 @@
         
         
         
-          29 mins
+          26 分钟
         
       </span>
     
@@ -382,12 +382,12 @@
             
               <div class="markdown-body">
                 
-                <h2 id="���������Z���"><a href="#���������Z���" class="headerlink" title="���������Ż���"></a>���������Ż���</h2><h3 id="һ��Promt����ʾ���ϵ��Z�"><a href="#һ��Promt����ʾ���ϵ��Z�" class="headerlink" title="һ��Promt����ʾ���ϵ��Ż�"></a>һ��Promt����ʾ���ϵ��Ż�</h3><h4 id="��һ�������Z��ڵ��ڲ�����ʾ��"><a href="#��һ�������Z��ڵ��ڲ�����ʾ��" class="headerlink" title="��һ�������Ż��ڵ��ڲ�����ʾ��"></a>��һ�������Ż��ڵ��ڲ�����ʾ��</h4><p>��Ai�ڵ㶼����Promt�ռ䣬��ͬ���������и���ȷ��Promt<br>����optimize�ڵ㣺</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><code class="hljs python">        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> user_feedback:<br>        <span class="hljs-comment"># �Ż���1����ʾ�����ϻ㱨��������ȷҪ��רҵ�ԡ��߼��ԡ����ȣ�</span><br>        prompt = PromptTemplate(<br>            input_variables=[<span class="hljs-string">&quot;text&quot;</span>],<br>            template=<span class="hljs-string">&quot;���Ż�������Ŀ��չ�㱨�ı��������쵼�㱨��Ҫ��1. ����������Ϣ����Ŀ�׶Ρ�����ɹ��������ƽ����Ԥ�����ʱ�䣩��2. ����רҵ�Ժ��߼��ԣ��ֵ������������б����������νӣ���3. ���Լ�࣬�������ࣻ4. ������ʽ���Ͻ�������ְ���㱨���ԡ��Ż���ɺ󣬵���һ���ԡ��Ż����ɣ�����ͷ����1-2������Ż�ԭ���ص�˵�����ϻ㱨�������Ż��㡣&quot;</span><br>        )<br>        chain = prompt | llm<br>        result = chain.invoke(&#123;<span class="hljs-string">&quot;text&quot;</span>: user_input&#125;).content<br>    <span class="hljs-keyword">else</span>:<br>        <span class="hljs-comment"># �Ż���2������û�������ǿ���㱨��������</span><br>        prompt = PromptTemplate(<br>            input_variables=[<span class="hljs-string">&quot;text&quot;</span>, <span class="hljs-string">&quot;feedback&quot;</span>],<br>            template=<span class="hljs-string">&quot;�����û�����������Ż���Ŀ��չ�㱨�ı��������쵼�㱨���ϸ���������Ϣ����Ŀ�׶Ρ�����ɹ��������ƽ����Ԥ�����ʱ�䣩���ص����ϻ㱨������������ʽ�Ͻ����߼����������Լ�ࡣԭ�ı���&#123;text&#125;\n�û�������&#123;feedback&#125;\n�Ż���ɺ󣬵���һ���ԡ��Ż����ɣ�����ͷ����1-2������Ż�ԭ���ص�˵�����ϻ㱨�������Ż��㡣&quot;</span><br>        )<br>        chain = prompt | llm<br>        result = chain.invoke(&#123;<span class="hljs-string">&quot;text&quot;</span>: user_input, <span class="hljs-string">&quot;feedback&quot;</span>: user_feedback&#125;).content<br>```    <br><span class="hljs-comment">#### �ڶ��������޸ķ�����ʾ</span><br>��feedback_node�����磺<br>```python<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">feedback_node</span>(<span class="hljs-params">state: InteractiveOptState</span>) -&gt; InteractiveOptState:<br>    <span class="hljs-string">&quot;&quot;&quot;���˻������ڵ㡿չʾ���+�����û��������Ż����������������ȣ�������Ч����&quot;&quot;&quot;</span><br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;\n&quot;</span> + <span class="hljs-string">&quot;-&quot;</span>*<span class="hljs-number">60</span>)<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;? AI�Ż��󣨻㱨�棩�ı���&quot;</span>)<br>    <span class="hljs-built_in">print</span>(state[<span class="hljs-string">&quot;optimized_text&quot;</span>])<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;\n? �Ż�����/���ɣ����ϻ㱨��������&quot;</span>)<br>    <span class="hljs-built_in">print</span>(state[<span class="hljs-string">&quot;optimize_suggest&quot;</span>])<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;\n&quot;</span> + <span class="hljs-string">&quot;-&quot;</span>*<span class="hljs-number">60</span>)<br>    <span class="hljs-comment"># �Ż���3�����䷴����ʾ�������û���׼������������Ч����</span><br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;? ������ʾ�������롸ȷ�ϡ�����������������޸ġ����貹������Ż��������������/ͻ���ص㣩�����˳�������ֹ���̣�&quot;</span>)<br><br>    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:<br>        user_feedback = <span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;�����뷴�����ϸ�����ʾ���룩��&quot;</span>).strip()<br>        <span class="hljs-keyword">if</span> user_feedback <span class="hljs-keyword">in</span> [<span class="hljs-string">&quot;ȷ��&quot;</span>, <span class="hljs-string">&quot;�޸�&quot;</span>, <span class="hljs-string">&quot;�˳�&quot;</span>]:<br><span class="hljs-comment">#�Ż��㣺�û����롸�޸ġ�ʱ����������������������Ż���׼��</span><br>            <span class="hljs-keyword">if</span> user_feedback == <span class="hljs-string">&quot;�޸�&quot;</span>:<br>                feedback_detail = <span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;�벹������Ż�������������ࡢͻ������ɹ����������㱨��������&quot;</span>).strip()<br>                user_feedback = <span class="hljs-string">f&quot;�޸ģ�<span class="hljs-subst">&#123;feedback_detail&#125;</span>&quot;</span><br>            <span class="hljs-keyword">break</span><br>        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;? ������Ч�����ϸ����롸ȷ�ϡ����޸ġ����˳������������ַ�\n&quot;</span>)<br>    <span class="hljs-keyword">return</span> &#123;<span class="hljs-string">&quot;user_feedback&quot;</span>: user_feedback&#125;<br></code></pre></td></tr></table></figure>
-<h3 id="������״̬���ִμ�¼��������֪���Լ��gڼ����Z���"><a href="#������״̬���ִμ�¼��������֪���Լ��gڼ����Z���" class="headerlink" title="������״̬���ִμ�¼��������֪���Լ��ǵڼ����Ż���"></a>������״̬���ִμ�¼��������֪���Լ��ǵڼ����Ż���</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">InteractiveOptState</span>(<span class="hljs-title class_ inherited__">TypedDict</span>):<br>    user_input: <span class="hljs-built_in">str</span><br>    optimized_text: <span class="hljs-type">Optional</span>[<span class="hljs-built_in">str</span>]<br>    optimize_suggest: <span class="hljs-type">Optional</span>[<span class="hljs-built_in">str</span>]<br>    user_feedback: <span class="hljs-type">Optional</span>[<span class="hljs-built_in">str</span>]<br>    final_result: <span class="hljs-type">Optional</span>[<span class="hljs-built_in">str</span>]<br>    optimize_round: <span class="hljs-built_in">int</span>  <span class="hljs-comment"># ? �������Ż��ִΣ���Prompt�Ż���</span><br></code></pre></td></tr></table></figure>
-<h3 id="�����Զ��쳣����"><a href="#�����Զ��쳣����" class="headerlink" title="�����Զ��쳣����"></a>�����Զ��쳣����</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">optimize_node</span>(<span class="hljs-params">state: InteractiveOptState</span>) -&gt; InteractiveOptState:<br>    user_input = state[<span class="hljs-string">&quot;user_input&quot;</span>]<br>    user_feedback = state[<span class="hljs-string">&quot;user_feedback&quot;</span>]<br>    current_round = state.get(<span class="hljs-string">&quot;optimize_round&quot;</span>, <span class="hljs-number">1</span>)  <span class="hljs-comment"># ? ��ȡ�ִ�</span><br><br>    <span class="hljs-keyword">try</span>:  <span class="hljs-comment"># ? �쳣����</span><br>        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> user_feedback:<br>            prompt = PromptTemplate(...)<br>            chain = prompt | llm<br>            result = chain.invoke(...).content<br>        <span class="hljs-keyword">else</span>:<br>            prompt = PromptTemplate(...)<br>            chain = prompt | llm<br>            result = chain.invoke(...).content<br><br>    <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:<br>        optimized_text = user_input<br>        optimize_suggest = <span class="hljs-string">f&quot;AI�Ż�ʧ�ܣ�<span class="hljs-subst">&#123;<span class="hljs-built_in">str</span>(e)&#125;</span>��������ԭ��&quot;</span><br>        <span class="hljs-keyword">return</span> &#123;<br>            <span class="hljs-string">&quot;optimized_text&quot;</span>: optimized_text,<br>            <span class="hljs-string">&quot;optimize_suggest&quot;</span>: optimize_suggest,<br>            <span class="hljs-string">&quot;optimize_round&quot;</span>: current_round + <span class="hljs-number">1</span><br>        &#125;<br></code></pre></td></tr></table></figure>
-<h3 id="�g��Զ����������l�"><a href="#�g��Զ����������l�" class="headerlink" title="�ģ��Զ����������ļ�"></a>�ģ��Զ����������ļ�</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">final_node</span>(<span class="hljs-params">state</span>):<br>    <span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(<span class="hljs-string">&quot;�Ż����.txt&quot;</span>, <span class="hljs-string">&quot;w&quot;</span>, encoding=<span class="hljs-string">&quot;utf-8&quot;</span>) <span class="hljs-keyword">as</span> f:<br>        f.write(state[<span class="hljs-string">&quot;optimized_text&quot;</span>])<br>    <span class="hljs-comment"># ? </span><br>    <span class="hljs-keyword">return</span> ...<br>    һ���Ƚ�ʵ�õĽ��ʹ����Ż�(*^_^*)<br></code></pre></td></tr></table></figure>
-<h3 id="δ�����…"><a href="#δ�����…" class="headerlink" title="δ�����…"></a>δ�����…</h3>
+                <h2 id="案例三的优化："><a href="#案例三的优化：" class="headerlink" title="案例三的优化："></a>案例三的优化：</h2><h3 id="一：Promt，提示词上的优化"><a href="#一：Promt，提示词上的优化" class="headerlink" title="一：Promt，提示词上的优化"></a>一：Promt，提示词上的优化</h3><h4 id="第一个方向：优化节点内部的提示词"><a href="#第一个方向：优化节点内部的提示词" class="headerlink" title="第一个方向：优化节点内部的提示词"></a>第一个方向：优化节点内部的提示词</h4><p>在Ai节点都会有Promt空间，不同场景可以有更精确的Promt<br>比如optimize节点：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><code class="hljs python">        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> user_feedback:<br>        <span class="hljs-comment"># 优化点1：提示词贴合汇报场景，明确要求（专业性、逻辑性、简洁度）</span><br>        prompt = PromptTemplate(<br>            input_variables=[<span class="hljs-string">&quot;text&quot;</span>],<br>            template=<span class="hljs-string">&quot;请优化以下项目进展汇报文本，面向领导汇报，要求：1. 保留核心信息（项目阶段、已完成工作、待推进事项、预计完成时间）；2. 提升专业性和逻辑性，分点清晰（无需列表，用文字衔接）；3. 语言简洁，避免冗余；4. 语气正式、严谨，符合职场汇报调性。优化完成后，单独一行以【优化理由：】开头给出1-2条简洁优化原因，重点说明贴合汇报场景的优化点。&quot;</span><br>        )<br>        chain = prompt | llm<br>        result = chain.invoke(&#123;<span class="hljs-string">&quot;text&quot;</span>: user_input&#125;).content<br>    <span class="hljs-keyword">else</span>:<br>        <span class="hljs-comment"># 优化点2：结合用户反馈，强化汇报场景适配</span><br>        prompt = PromptTemplate(<br>            input_variables=[<span class="hljs-string">&quot;text&quot;</span>, <span class="hljs-string">&quot;feedback&quot;</span>],<br>            template=<span class="hljs-string">&quot;根据用户反馈针对性优化项目进展汇报文本，面向领导汇报，严格保留核心信息（项目阶段、已完成工作、待推进事项、预计完成时间），重点贴合汇报场景：语气正式严谨、逻辑清晰、语言简洁。原文本：&#123;text&#125;\n用户反馈：&#123;feedback&#125;\n优化完成后，单独一行以【优化理由：】开头给出1-2条简洁优化原因，重点说明贴合汇报场景的优化点。&quot;</span><br>        )<br>        chain = prompt | llm<br>        result = chain.invoke(&#123;<span class="hljs-string">&quot;text&quot;</span>: user_input, <span class="hljs-string">&quot;feedback&quot;</span>: user_feedback&#125;).content<br>```    <br><span class="hljs-comment">#### 第二个方向，修改反馈提示</span><br>在feedback_node，比如：<br>```python<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">feedback_node</span>(<span class="hljs-params">state: InteractiveOptState</span>) -&gt; InteractiveOptState:<br>    <span class="hljs-string">&quot;&quot;&quot;【人机交互节点】展示结果+接收用户反馈，优化：提升交互流畅度，减少无效提问&quot;&quot;&quot;</span><br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;\n&quot;</span> + <span class="hljs-string">&quot;-&quot;</span>*<span class="hljs-number">60</span>)<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;? AI优化后（汇报版）文本：&quot;</span>)<br>    <span class="hljs-built_in">print</span>(state[<span class="hljs-string">&quot;optimized_text&quot;</span>])<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;\n? 优化建议/理由（贴合汇报场景）：&quot;</span>)<br>    <span class="hljs-built_in">print</span>(state[<span class="hljs-string">&quot;optimize_suggest&quot;</span>])<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;\n&quot;</span> + <span class="hljs-string">&quot;-&quot;</span>*<span class="hljs-number">60</span>)<br>    <span class="hljs-comment"># 优化点3：补充反馈提示，引导用户精准反馈，减少无效输入</span><br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;? 反馈提示：可输入「确认」（保留结果）、「修改」（需补充具体优化方向，例：更简洁/突出重点）、「退出」（终止流程）&quot;</span>)<br><br>    <span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:<br>        user_feedback = <span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;请输入反馈（严格按照提示输入）：&quot;</span>).strip()<br>        <span class="hljs-keyword">if</span> user_feedback <span class="hljs-keyword">in</span> [<span class="hljs-string">&quot;确认&quot;</span>, <span class="hljs-string">&quot;修改&quot;</span>, <span class="hljs-string">&quot;退出&quot;</span>]:<br><span class="hljs-comment">#优化点：用户输入「修改」时，引导补充具体需求，提升优化精准度</span><br>            <span class="hljs-keyword">if</span> user_feedback == <span class="hljs-string">&quot;修改&quot;</span>:<br>                feedback_detail = <span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;请补充具体优化方向（例：更简洁、突出已完成工作、调整汇报语气）：&quot;</span>).strip()<br>                user_feedback = <span class="hljs-string">f&quot;修改：<span class="hljs-subst">&#123;feedback_detail&#125;</span>&quot;</span><br>            <span class="hljs-keyword">break</span><br>        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;? 输入无效！请严格输入「确认」「修改」「退出」，无其他字符\n&quot;</span>)<br>    <span class="hljs-keyword">return</span> &#123;<span class="hljs-string">&quot;user_feedback&quot;</span>: user_feedback&#125;<br></code></pre></td></tr></table></figure>
+<h3 id="二：给状态加轮次记录（智能体知道自己是第几轮优化）"><a href="#二：给状态加轮次记录（智能体知道自己是第几轮优化）" class="headerlink" title="二：给状态加轮次记录（智能体知道自己是第几轮优化）"></a>二：给状态加轮次记录（智能体知道自己是第几轮优化）</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">InteractiveOptState</span>(<span class="hljs-title class_ inherited__">TypedDict</span>):<br>    user_input: <span class="hljs-built_in">str</span><br>    optimized_text: <span class="hljs-type">Optional</span>[<span class="hljs-built_in">str</span>]<br>    optimize_suggest: <span class="hljs-type">Optional</span>[<span class="hljs-built_in">str</span>]<br>    user_feedback: <span class="hljs-type">Optional</span>[<span class="hljs-built_in">str</span>]<br>    final_result: <span class="hljs-type">Optional</span>[<span class="hljs-built_in">str</span>]<br>    optimize_round: <span class="hljs-built_in">int</span>  <span class="hljs-comment"># ? 新增：优化轮次（非Prompt优化）</span><br></code></pre></td></tr></table></figure>
+<h3 id="三：自动异常捕获"><a href="#三：自动异常捕获" class="headerlink" title="三：自动异常捕获"></a>三：自动异常捕获</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">optimize_node</span>(<span class="hljs-params">state: InteractiveOptState</span>) -&gt; InteractiveOptState:<br>    user_input = state[<span class="hljs-string">&quot;user_input&quot;</span>]<br>    user_feedback = state[<span class="hljs-string">&quot;user_feedback&quot;</span>]<br>    current_round = state.get(<span class="hljs-string">&quot;optimize_round&quot;</span>, <span class="hljs-number">1</span>)  <span class="hljs-comment"># ? 获取轮次</span><br><br>    <span class="hljs-keyword">try</span>:  <span class="hljs-comment"># ? 异常捕获</span><br>        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> user_feedback:<br>            prompt = PromptTemplate(...)<br>            chain = prompt | llm<br>            result = chain.invoke(...).content<br>        <span class="hljs-keyword">else</span>:<br>            prompt = PromptTemplate(...)<br>            chain = prompt | llm<br>            result = chain.invoke(...).content<br><br>    <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:<br>        optimized_text = user_input<br>        optimize_suggest = <span class="hljs-string">f&quot;AI优化失败（<span class="hljs-subst">&#123;<span class="hljs-built_in">str</span>(e)&#125;</span>），保留原文&quot;</span><br>        <span class="hljs-keyword">return</span> &#123;<br>            <span class="hljs-string">&quot;optimized_text&quot;</span>: optimized_text,<br>            <span class="hljs-string">&quot;optimize_suggest&quot;</span>: optimize_suggest,<br>            <span class="hljs-string">&quot;optimize_round&quot;</span>: current_round + <span class="hljs-number">1</span><br>        &#125;<br></code></pre></td></tr></table></figure>
+<h3 id="四：自动保存结果到文件"><a href="#四：自动保存结果到文件" class="headerlink" title="四：自动保存结果到文件"></a>四：自动保存结果到文件</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">final_node</span>(<span class="hljs-params">state</span>):<br>    <span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(<span class="hljs-string">&quot;优化结果.txt&quot;</span>, <span class="hljs-string">&quot;w&quot;</span>, encoding=<span class="hljs-string">&quot;utf-8&quot;</span>) <span class="hljs-keyword">as</span> f:<br>        f.write(state[<span class="hljs-string">&quot;optimized_text&quot;</span>])<br>    <span class="hljs-comment"># ? </span><br>    <span class="hljs-keyword">return</span> ...<br>    一个比较实用的解决痛点的优化(*^_^*)<br></code></pre></td></tr></table></figure>
+<h3 id="未完待续…"><a href="#未完待续…" class="headerlink" title="未完待续…"></a>未完待续…</h3>
                 
               </div>
             
@@ -405,7 +405,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%D1%A7%CF%B0%EF%BF%BD%CA%BC%EF%BF%BD/" class="category-chain-item">ѧϰ�ʼ�</a>
+  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="category-chain-item">学习笔记</a>
   
   
 
@@ -440,26 +440,26 @@
     <div class="license-meta">
       
         <div class="license-meta-item">
-          <div>Author</div>
+          <div>作者</div>
           <div>John Doe</div>
         </div>
       
       
         <div class="license-meta-item license-meta-date">
-          <div>Posted on</div>
-          <div>April 25, 2026</div>
+          <div>发布于</div>
+          <div>2026年4月25日</div>
         </div>
       
       
       
         <div class="license-meta-item">
-          <div>Licensed under</div>
+          <div>许可协议</div>
           <div>
             
               
               
                 <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
-                  <span class="hint--top hint--rounded" aria-label="BY - Attribution">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
                     <i class="iconfont icon-cc-by"></i>
                   </span>
                 </a>
@@ -485,7 +485,7 @@
                     
                       <a href="/2026/04/23/hello-world/" title="Hello World">
                         <span class="hidden-mobile">Hello World</span>
-                        <span class="visible-mobile">Next</span>
+                        <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
                     
@@ -506,7 +506,7 @@
     <div id="toc">
   <p class="toc-header">
     <i class="iconfont icon-list"></i>
-    <span>Table of Contents</span>
+    <span>目录</span>
   </p>
   <div class="toc-body" id="toc-body"></div>
 </div>
@@ -562,7 +562,7 @@
   <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
         <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -570,7 +570,7 @@
       <div class="modal-body mx-3">
         <div class="md-form mb-5">
           <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
         </div>
         <div class="list-group" id="local-search-result"></div>
       </div>
@@ -812,7 +812,7 @@
   
 
   <noscript>
-    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
   </noscript>
 </body>
 </html>
